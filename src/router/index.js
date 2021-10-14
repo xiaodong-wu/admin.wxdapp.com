@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '',
-    redirect:'/dashboard'
+    redirect: '/dashboard'
   },
   {
     path: '/dashboard',
@@ -76,8 +76,8 @@ const router = new VueRouter({
 
 //解决点击当前页面链接报错问题
 const originalPush = VueRouter.prototype.push
-   VueRouter.prototype.push = function push(location) {
-   return originalPush.call(this, location).catch(err => err)
+VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
 }
 
 export default router
