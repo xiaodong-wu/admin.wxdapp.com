@@ -30,7 +30,7 @@ export default {
   name: "app",
   components: {
     NavMenu,
-    Header,
+    Header
   },
 };
 </script>
@@ -47,12 +47,10 @@ export default {
   height: 100%;
 }
 .el-aside {
-  max-width: 220px;
+  max-width: 240px;
 }
 .el-main {
   background-color: #e9eef3;
   color: #333;
-  text-align: center;
-  line-height: 160px;
 }
 </style>
